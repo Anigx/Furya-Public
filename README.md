@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/furya_logo.png" alt="Furya Logo" width="180" height="180">
+</div>
+
 # Furya
 
 Fast, native Android client for e621 and e6ai.
