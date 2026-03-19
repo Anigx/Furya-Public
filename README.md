@@ -1,115 +1,121 @@
-<div align="center">
-  <h1>Furya</h1>
-  <img src="assets/furya_logo.png" alt="Furya Large Logo" width="180" height="180">
-  
-  <h1>Fast. Modern. Powerful.</h1>
-  <p>
-    <strong>The most advanced native Android client for e621.net</strong>
-  </p>
+# Furya
 
-  <p>
-    <a href="https://github.com/CyberByteCraft/Furya-Public/releases/latest">
-      <img src="https://img.shields.io/github/v/release/CyberByteCraft/Furya-Public?style=for-the-badge&color=00796b&label=Download%20APK" alt="Download Latest Release">
-    </a>
-  </p>
+Fast, native Android client for e621 and e6ai.
 
-  <p>
-    <a href="https://flutter.dev">
-      <img src="https://img.shields.io/badge/Built%20with-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Built with Flutter">
-    </a>
-    <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android">
-  </p>
-</div>
+[![Latest Release](https://img.shields.io/github/v/release/CyberByteCraft/Furya-Public?style=for-the-badge&color=00796b&label=Download%20APK)](https://github.com/CyberByteCraft/Furya-Public/releases/latest)
 
----
+[![Built with Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
+![Platform Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)
 
-## What is Furya?
+## Overview
 
-**Furya** is a native Android application built from the ground up to provide a superior browsing experience for the e621 image board. Unlike simple web-wrappers, Furya caches data intelligently, preloads content, and offers features that power-users need.
+Furya is a native Android app focused on fast browsing, smooth media playback, and reliable account sync for large collections.
 
-Whether you are browsing casually or managing large collections of favorites, Furya is designed to be **fast, fluid, and battery-friendly**.
+It is built as an app-first experience, not a web wrapper.
 
----
+## Current Feature Set
 
-## Key Features & Capabilities
+### Feed and Navigation
 
-### ⚡ Performance & Display
-*   **Infinite Masonry Grid:** A staggered, Pinterest-style layout that adapts perfectly to your phone's aspect ratio.
-*   **Zero-Lag Scrolling:** Aggressive prefetching ensures images are ready before you scroll to them.
-*   **Customizable Layout:** Adjust the grid to show **1, 2, or 3 columns** via Settings.
-*   **Theme Engine:** Fully supported **Dark Mode** (OLED black), Light Mode, and System Sync.
+- Infinite masonry feed with prefetching and pagination.
+- Pull to refresh and automatic load more.
+- Scroll position memory per query and feed context.
+- Quick scroll-to-top button for long sessions.
+- Configurable grid columns (1, 2, or 3).
 
-### 🎬 Universal Media Support
-*   **HD Image Viewer:** Full support for `Deep Zoom` to inspect 8K+ art without blurring.
-*   **Video Player:** Native playback for **WebM** and **MP4** files with looping and mute controls.
-*   **Animations:** Smooth, optimized GIF playback.
-*   **Flash (SWF) Support:** 
-    *   Dedicated setting to **Show/Hide** Flash content in the grid.
-    *   Secure "Open in Browser" bridge for legacy SWF files (compatibile with standard Android browsers).
-    *   Visual indicators in the grid for SWF/WebM/GIF files.
+### Search, Filters, and Discovery
 
-### 💾 Offline Power-User Tools
-*   **Smart Tag Cache:** 
-    *   Downloads a local database of the top **15,000 tags**.
-    *   Provides instant, offline-capable autocomplete for tags.
-*   **Offline Favorites Sync:**
-    *   Define specific tags (e.g., `wallpaper`, `fav:my_user`) to keep offline.
-    *   **Auto-Sync:** The app downloads posts matching these tags to your device.
-    *   **Storage Limits:** Set a custom cache limit (e.g., 500MB, 2GB) to manage storage usage.
-*   **Sync Dashboard:** Monitor download progress and cache status directly in Settings.
+- Tag search with chip-based query building.
+- Local tag cache plus API fallback for autocomplete.
+- Favorite tags picker and favorite tag management.
+- Tag groups for organizing favorite tags.
+- Filter sheet with sort modes and rating filters.
+- Popular mode with day, week, and month ranges.
+- Search history support.
 
-### 🔍 Search & Discovery
-*   **Intelligent Autocomplete:** Typing `fox`? We'll instantly suggest `fox_ears`, `red_fox`, etc., using the local tag database.
-*   **Tag Grouping:** Tags are color-coded by category (Artist, Character, Species, Copyright) just like the main site.
-*   **Search History:** Jump back to your previous queries instantly.
-*   **Favorite Tags:** Pin your most-visited tags for one-tap access from the home screen.
+### Content Sources and Accounts
 
-### 🛡️ Privacy & Account
-*   **Account Integration:** Log in securely to manage your remote favorites and vote on posts.
-*   **Blacklist:** 
-    *   Import your e621 account blacklist.
-    *   Manage a local blacklist to hide specific content globally.
-*   **Safe Mode:** Content filtering for Questionable/Explicit ratings.
+- Source switch: e621, e6ai, or mixed mode.
+- Separate account handling for e621 and e6ai.
+- Guest mode support for e621.
+- API key based login flow with in-app help.
 
----
+### Media Viewer
 
-## Support & Feedback
+- Fullscreen post viewer with swipe navigation.
+- Deep zoom for images via interactive viewer.
+- HD viewer mode and progressive high-resolution upgrade.
+- Native WebM and MP4 playback.
+- GIF playback support.
+- Slideshow mode with adjustable speed.
+- Shuffle mode inside the viewer.
+- Fullscreen immersive mode toggle.
+- Download media directly to device storage.
+- SWF fallback with external browser opening.
+- Landscape option to hide info overlays.
 
-We use GitHub Issues to track bugs and feature requests.
+### Favorites and Sync
 
-### Found a Bug? 🐛
-If the app crashes or behaves unexpectedly:
-1.  Check if the bug is already reported in the [Issues](https://github.com/CyberByteCraft/Furya-Public/issues) tab.
-2.  Open a **[Bug Report](https://github.com/CyberByteCraft/Furya-Public/issues/new?assignees=&labels=bug&template=bug_report.yml)**.
-3.  Please provide your **device model** and **Android version** so we can reproduce it.
+- Source-aware favorites for e621 and e6ai.
+- Automatic account sync when a source account is connected.
+- Local fallback favorites when no account is connected.
+- Mixed mode favorites tabs (e621 and e6ai split).
+- Local favorites search, sort, and rating filters.
+- Pool-aware favorite flow that can also save full comic pools.
 
-### Have an Idea? 🚀
-We love hearing what you want next!
-1.  Open a **[Feature Request](https://github.com/CyberByteCraft/Furya-Public/issues/new?assignees=&labels=enhancement&template=feature_request.yml)**.
-2.  Describe the problem you are trying to solve and your proposed solution.
+### Pools
 
-### Labels Guide
-We use the following labels to organize issues:
-*   <img src="https://img.shields.io/badge/-bug-d73a4a" alt="bug"/> **Bug**: Something isn't working.
-*   <img src="https://img.shields.io/badge/-enhancement-a2eeef" alt="enhancement"/> **Enhancement**: A new feature request.
-*   <img src="https://img.shields.io/badge/-question-d876e3" alt="question"/> **Question**: General questions or discussions.
-*   <img src="https://img.shields.io/badge/-ui-FFC107" alt="ui"/> **UI/UX**: Visual or design topics.
+- Browse pools with search, sort, and category filters.
+- Toggle between list and grid pool views.
+- Open pool detail pages with ordered posts.
+- Favorite and unfavorite pools from list and detail views.
 
----
+### Collections
 
-## Installation Guide
+- Create, rename, delete, and reorder collections.
+- Save posts to collections from the post viewer.
+- Multi-select collection management.
+- Export collections as JSON.
+- Import collections from JSON.
 
-1.  **Download:** Go to the **[Releases](https://github.com/CyberByteCraft/Furya-Public/releases/latest)** tab.
-2.  **Get the APK:** Download `Furya-...-arm64-v8a.apk` (Best for 99% of phones) or `Furya-...-armeabi-v7a.apk` (Old devices).
-3.  **Install:** Open the file. You may need to enable "Install from Unknown Sources" in your browser settings.
+### Favorite Artists
 
----
+- Dedicated favorite artists tab.
+- Search within favorite artists.
+- Open an artist directly as a filtered feed.
+
+### Blacklist and Safety
+
+- Local blacklist management UI.
+- Source-specific blacklist handling (e621, e6ai, both).
+- Sync blacklist tags from remote APIs.
+- Import and export blacklist data.
+- Remove entries individually or clear by source.
+- Safe mode rating filters.
+
+### Offline, Cache, and Data
+
+- Offline tag rules for background caching.
+- Manual offline sync trigger.
+- Storage limit configuration for offline cache.
+- Tag database update screen with progress and ETA.
+- Connectivity status indicator and offline awareness.
+
+### App Maintenance
+
+- In-app update check against GitHub releases.
+- In-app APK download flow for updates.
+- App version/build info in settings.
+- Optional anonymous usage statistics toggle.
+
+## Installation
+
+1. Open the [latest release page](https://github.com/CyberByteCraft/Furya-Public/releases/latest).
+2. Download the attached APK file (`Furya-vX.X.X-bNN.apk`).
+3. Install the APK on Android. This is a universal build and works on all supported devices.
 
 ## Disclaimer
 
-This application is a third-party client. It accesses public APIs provided by e621.net.
-Furya is not affiliated with, endorsed by, or sponsored by e621.
-Please browse responsibly.
+Furya is a third-party client for public APIs provided by e621.net and e6ai.net.
 
----
-
+Furya is not affiliated with, endorsed by, or sponsored by e621 or e6ai.
