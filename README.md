@@ -6,6 +6,10 @@
 
 Fast, native Android client for e621 and e6ai.
 
+**Furya is currently distributed as a closed-source Android app.**
+
+This public repository provides release downloads, update information, documentation, and a place to report bugs or request features. The app source code is not published here.
+
 [![Latest Release](https://img.shields.io/github/v/release/Anigx/Furya-Public?style=for-the-badge&color=00796b&label=Download%20APK)](https://github.com/Anigx/Furya-Public/releases/latest)
 
 [![Built with Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -117,6 +121,12 @@ It is built as an app-first experience, not a web wrapper.
 1. Open the [latest release page](https://github.com/Anigx/Furya-Public/releases/latest).
 2. Download the attached APK file (`Furya-vX.X.X-bNN.apk`).
 3. Install the APK on Android. This is a universal build and works on all supported devices.
+
+**Only download Furya from the official GitHub Releases page or through the in-app updater.**
+
+## Content Warning
+
+Furya can display content from e621 and e6ai, including mature or explicit material depending on user settings and source content. Users are responsible for configuring filters, blacklists, and safe mode according to their preferences and local laws.
 
 ## Disclaimer
 

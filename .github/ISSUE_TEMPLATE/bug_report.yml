@@ -52,7 +52,41 @@ body:
         - Older
     validations:
       required: true
-      
+
+  - type: dropdown
+    id: content-source
+    attributes:
+      label: Content Source
+      options:
+        - e621
+        - e6ai
+        - Mixed mode
+    validations:
+      required: true
+
+  - type: dropdown
+    id: login-mode
+    attributes:
+      label: Login Mode
+      options:
+        - Guest
+        - Logged in
+    validations:
+      required: true
+
+  - type: dropdown
+    id: media-format
+    attributes:
+      label: Media Format
+      options:
+        - Image
+        - GIF
+        - WebM
+        - MP4
+        - SWF
+    validations:
+      required: false
+
   - type: input
     id: device
     attributes:

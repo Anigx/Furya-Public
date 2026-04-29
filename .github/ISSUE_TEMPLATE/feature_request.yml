@@ -43,3 +43,22 @@ body:
         - "Nice to have"
         - "Important"
         - "Critical / Dealbreaker"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      options:
+        - Feed / Navigation
+        - Media Viewer
+        - Favorites / Sync
+        - Pools
+        - Collections
+        - Blacklist / Safe Mode
+        - Offline / Cache
+        - Settings / Updates
+        - Other
+    validations:
+      required: true
