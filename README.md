@@ -136,10 +136,8 @@ Furya is a third-party client for public APIs provided by e621.net and e6ai.net.
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=Anigx%2FFurya-Public&type=timeline&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Anigx/Furya-Public&type=timeline&theme=dark&logscale&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Anigx/Furya-Public&type=timeline&logscale&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Anigx/Furya-Public&type=timeline&logscale&legend=top-left" />
- </picture>
-</a>Furya is not affiliated with, endorsed by, or sponsored by e621 or e6ai.
+[![Star History Chart](https://api.star-history.com/chart?repos=Anigx/Furya-Public&type=timeline&logscale&legend=top-left)](https://www.star-history.com/?repos=Anigx%2FFurya-Public&type=timeline&legend=top-left)
+
+## Disclaimer
+
+Furya is not affiliated with, endorsed by, or sponsored by e621 or e6ai.
