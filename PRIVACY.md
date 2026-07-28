@@ -1,96 +1,65 @@
-# Privacy Policy
+# Furya Privacy Notice
 
-## Overview
+Last updated: July 28, 2026
 
-Furya is a closed-source Android application. It does not operate its own servers. All data is stored locally on your device or sent directly to the content sources you choose (e621 or e6ai).
+## Scope
 
-## Data Stored Locally
+This notice describes information handled by the Furya Android app, its public Community Feedback Board, and Furya's existing private in-app report dialog. It does not replace the privacy practices of e621, e6ai, GitHub, Supabase, or any other service you use through Furya.
 
-Furya stores the following data locally on your device:
+## Information stored on your device
 
-- **API keys** – used to authenticate your account with e621 or e6ai
-- **Account preferences** – source selection, display settings, filters
-- **Local favorites** – when not connected to an account
-- **Collections** – posts you have saved to collections
-- **Blacklist entries** – tags and rating filters you have configured
-- **Offline cache** – cached posts and tag data for offline use
-- **Downloaded media** – files you have downloaded to device storage
-- **Search history** – recent searches for convenience
-- **Usage statistics** – if you have enabled optional anonymous telemetry
+Furya stores app data locally, which can include account preferences, source selection, filters and blacklist entries, local favorites, collections, search history, cached posts and tags, and downloaded media. e621 and e6ai usernames and API keys used by the app are stored on the device in secure storage for source-account access.
 
-## API Keys and Account Data
+Community-account session and magic-link sign-in state are also stored on the device so the app can maintain the community session.
 
-API keys are stored locally on your device. They are used only to authenticate requests to the selected content source (e621 or e6ai). Furya does not send your API key to the developer.
+## e621 and e6ai account use
 
-We recommend protecting your device with a lock screen (PIN, password, or biometric) and removing your account from Furya before selling or giving away your device.
+Furya sends requests directly to the e621.net and e6ai.net APIs when you use those sources. Depending on what you do, those requests can include authentication, searches, tag lookups, favorites, pools, downloads, and blacklist operations.
 
-## Data Sent to e621/e6ai
+To participate in the Community Feedback Board, you must link at least one e621 or e6ai account. During linking, Furya verifies the account over TLS and records the verified external account identity needed for the link. Furya does not store the source API key or password used to perform that verification. Those credentials are not displayed on the board.
 
-When you use Furya, it sends requests directly to e621.net or e6ai.net APIs. This includes:
+## Community Feedback Board
 
-- Search queries and tag searches
-- Favorite and pool operations
-- Post downloads
-- Account authentication
+The board is publicly readable. If you participate, the following information can be public:
 
-This communication is between you and the content source directly.
+- Your board pseudonym.
+- Request titles and descriptions.
+- Comments you submit.
+- Aggregate vote scores and discussion context.
+- Attachments only after a moderator approves them for public display.
 
-## Data Sent to GitHub for Update Checks
+Furya also handles the confirmed email address used for magic-link community sign-in, the community account identifier, the linked e621/e6ai identity, your acceptance of the Community Rules and this notice, votes, content reports, and moderation-related records needed to run the board. Your email address and linked source-account names are not used as your public board pseudonym.
 
-Furya checks GitHub Releases for available updates. This check only sends your current app version number to GitHub. No personal data or account information is transmitted.
+Before approval, board attachments are held privately for moderation. Only approved attachments are made available on the public board. Do not upload credentials, personal data, source media, or other information that should remain private. See [Community Rules](COMMUNITY_RULES.md).
 
-## Data Sent to the Developer
+## Private in-app reports
 
-**Furya does not send usernames, API keys, search queries, favorites, viewed posts, downloaded files, collections, or blacklist entries to the developer.**
+Furya's existing in-app report dialog is separate from the public board. It sends private bug or feature reports to Furya's report system. A report can include its type, title, description, optional reproduction steps, app version and build number, platform, locale, optional Android device model, and the screen context. It can also include the available e621/e6ai user context or guest status. If optional analytics is enabled and an installation ID is available, that ID can be included.
 
-## Anonymous Usage Statistics
+Private reports are not published on the board and are not migrated into it. Do not include API keys, passwords, or other secrets in a report.
 
-Anonymous usage statistics are optional and disabled by default. If enabled, they collect only anonymous, non-personal information such as:
+## Optional analytics
 
-- App feature usage (e.g., which screens are opened)
-- General app performance metrics
-- Crash reports (without personal data)
+Optional analytics is consent-based and can be configured in Settings. When enabled, Furya may send the selected device information, installation ID, app version, and language to Supabase for app-usage and version analytics. Analytics is optional; declining or withdrawing the applicable options prevents the corresponding analytics fields from being sent.
 
-**Anonymous statistics do NOT include:**
+## Other services
 
-- Usernames or API keys
-- Search queries or tags
-- Favorites or blacklist entries
-- Downloaded files or post IDs
-- Collection contents
+Furya communicates with:
 
-You can enable or disable usage statistics at any time in Settings.
+- **e621.net and e6ai.net** for the content-source features you choose to use.
+- **GitHub** to check Furya releases and updates; the app sends its current app version for that check.
+- **Supabase** for optional analytics, private in-app reports, and the community account and feedback-board services.
 
-## Local Cache and Downloads
+These services handle information under their own terms and privacy practices.
 
-Media files you download and cached data are stored in your device's app storage. These files remain on your device until you manually delete them or uninstall Furya.
+## Anonymization and deletion
 
-## Data Deletion
+Removing a board item or deleting a community account anonymizes its author. The request, discussion, and vote history may remain for context; attachments are removed. This does not make content that was already public private again.
 
-To delete your local data:
+To remove local app data, remove connected source accounts in Furya, clear app storage or cache as appropriate, delete downloaded media, and uninstall the app. Local-data removal does not delete data already sent to e621, e6ai, GitHub, Supabase, or the public board.
 
-1. **Remove your account** – Go to Settings > Accounts and remove your e621/e6ai account
-2. **Clear the cache** – Go to Settings > Storage and clear the app cache
-3. **Delete downloaded files** – Use a file manager to navigate to Android/data/com.furya.app/ and delete the files folder
-4. **Uninstall the app** – This removes all data stored by Furya
+## Security and contact
 
-## Security
+Protect your device and never share API keys, passwords, magic links, or authentication tokens. Do not put sensitive information in public GitHub issues.
 
-- API keys are stored only on your device
-- Use a device lock screen (PIN, password, biometric) for additional protection
-- Never share your API key with anyone
-- Do not post your API key in public issues or support requests
-
-## Third-Party Services
-
-Furya communicates directly with:
-
-- **e621.net** – for e621 API access
-- **e6ai.net** – for e6ai API access
-- **GitHub** – for release updates only
-
-No data is sent to any other third-party services.
-
-## Contact
-
-For privacy-related questions, please [open an issue](https://github.com/Anigx/Furya-Public/issues) on GitHub.
+For privacy questions or account/content anonymization requests, open an issue in the [Furya Public GitHub repository](https://github.com/Anigx/Furya-Public/issues). GitHub issues are public, so provide only the information needed to describe the request. For security vulnerabilities, follow [SECURITY.md](SECURITY.md).
