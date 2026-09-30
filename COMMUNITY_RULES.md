@@ -1,63 +1,75 @@
 # Furya Community Rules
 
-Last updated: July 28, 2026
+Last updated: September 30, 2026
 
 ## Purpose and visibility
 
-The Furya Community Feedback Board is for bug reports and feature requests about Furya. The board is publicly readable. Board titles, descriptions, comments, public pseudonyms, aggregate vote scores, and moderator-approved attachments can be viewed by anyone who can access the board.
+The Furya Feedback Board is for constructive bug reports and feature requests
+about Furya. It is publicly readable. Published titles, descriptions, comments,
+pseudonyms and aggregate voting information can be read by others.
 
-Do not include information in a board post or comment that you would not want to be public. The separate in-app report dialog remains available for private diagnostic and support reports; it is not the public board.
+Do not post information you want kept private. For private support, privacy,
+content or deletion requests, contact **[Anigx@pushedv.de](mailto:Anigx@pushedv.de)**.
+The former private in-app report dialog is no longer an active entry point.
 
-## Who can participate
+## Participation
 
-Reading the board does not require an account. Creating requests, commenting, voting, uploading attachments, and reporting board content require a Furya community account with:
+Reading does not require a community account. Creating requests, commenting
+and voting require Telegram OAuth/OIDC sign-in, a unique community pseudonym,
+a verified linked source account, and acceptance of these rules and the
+[Privacy Notice](PRIVACY.md). Available sources depend on the build; existing
+sideload editions support e621/e926/e6ai and the announced Play scope is e926.
 
-- a confirmed email address, verified through a magic link;
-- at least one linked and verified e621 or e6ai account; and
-- acceptance of these rules and the [Privacy Notice](PRIVACY.md).
-
-Your public board identity is a unique pseudonym, not your email address or linked e621/e6ai account name. Do not choose a pseudonym that impersonates another person, organization, moderator, or service.
+Your pseudonym must not impersonate a person, organization, moderator or
+service. Your linked source account or Telegram identity is not your public
+board pseudonym. Source and Telegram accounts remain independently managed.
 
 ## Posting standards
 
-Keep requests specific, constructive, and relevant to Furya. You are responsible for what you submit and for having permission to share it.
+You are responsible for your submitted content and the right to share it.
+Keep requests specific, relevant and respectful. Do not submit:
 
-Do not post or upload:
+- Passwords, API keys, sign-in/session/refresh tokens, recovery codes, private
+  URLs or other security-sensitive information.
+- Personal information about yourself or others that is not intended to be
+  public, including private messages, addresses or account details.
+- Source media, explicit material, illegal content, malware, phishing or
+  copyrighted material you cannot lawfully share.
+- Threats, harassment, hate speech, exploitative material or sexual content
+  involving minors.
+- Spam, advertising, vote manipulation, duplicates intended to disrupt the
+  board, or attempts to bypass service limits.
+- Public details of an unreported vulnerability; use [SECURITY.md](SECURITY.md).
 
-- Credentials, API keys, passwords, magic links, authentication tokens, private URLs, or other security-sensitive information.
-- Personal data about yourself or others, including email addresses, real names, locations, private messages, or account details that are not intended to be public.
-- Source media, explicit material, copyrighted material you are not permitted to share, or other content unrelated to Furya's user interface.
-- Illegal content, malware, phishing material, instructions intended to compromise systems or accounts, or unreported security vulnerabilities. Follow [SECURITY.md](SECURITY.md) for security reporting guidance.
-- Threats, harassment, hate speech, sexual content involving minors, non-consensual sexual content, or other abusive or exploitative material.
-- Spam, advertisements, duplicate submissions, vote manipulation, automated abuse, or content intended to disrupt the board.
+## Reports and attachments
 
-Use the board's content-reporting controls to report a request, comment, or attachment that may violate these rules. Reports are sent to the moderation queue. Do not use reports to harass others or suppress good-faith feedback.
+The backend supports moderation records and controlled image attachments,
+but the current client does not provide attachment-upload or content-report
+submission controls. To report a board item privately, email the contact above
+with the item/comment reference and a brief reason. Do not repeat sensitive
+content in a public GitHub issue.
 
-## Attachments
+If attachments are enabled in a future build, only permitted UI screenshots
+may be submitted; source media and sensitive information are not permitted.
+An attachment is not public until moderator approval. Future upload controls
+must disclose their limits and moderation process before submission.
 
-Attachments are limited to up to three PNG, JPEG, or WebP files per request, with a maximum size of 5 MB each. They may only show Furya user-interface screenshots and must not contain source media or sensitive information.
+## Limits and moderation
 
-Uploads are not public when submitted. A moderator must approve an attachment before it can be displayed on the public board. Approval is not guaranteed.
+Server-side community limits include five new requests per day, twenty
+comments per hour and sixty votes per hour. Do not evade them through other
+accounts. Moderators can manage status/visibility, duplicates and discussion
+and take reasonable steps against abuse. A status label is a planning aid,
+not a promise of implementation or a release date.
 
-## Fair use limits
+## Deletion and retention
 
-The service applies server-side limits per community account:
+The deployed deletion service removes a Furya community account and its
+associated records/files. Authored request/comment text is replaced by a
+deleted placeholder; other participants' discussion and placeholders may
+remain. Individual votes belonging to the erased account are removed.
+Backups and operational records follow the [Privacy Notice](PRIVACY.md).
 
-- Five new requests per day.
-- Twenty comments per hour.
-- Sixty votes per hour.
-- Ten uploads per day.
-
-These limits may prevent an action even when the board is otherwise available. Do not attempt to bypass them by creating or using other accounts.
-
-## Moderation
-
-Moderators may review reports and attachments, change a request's status or visibility, mark duplicates, remove or hide content, and take other reasonable steps to operate the board and enforce these rules. Moderator decisions and response times are not guaranteed. Status labels communicate project planning and do not promise implementation or release dates.
-
-## Anonymization and removal
-
-If you delete your board content or delete your community account, Furya anonymizes the author. The request, discussion, and vote history may remain on the board so that its context is preserved; attachments are removed. Do not rely on posting and later deleting content to keep it private.
-
-## Contact
-
-For general support, board questions, or privacy questions, open an issue in the [Furya Public GitHub repository](https://github.com/Anigx/Furya-Public/issues). GitHub issues are public: do not include credentials, personal data, or other sensitive information.
+Deleting does not retract copies others have made or delete independently
+managed Telegram/source accounts. See [Account and Data Deletion](ACCOUNT_DELETION.md)
+for in-app availability and private requests without the app.
