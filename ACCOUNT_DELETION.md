@@ -46,16 +46,18 @@ service is already deployed.
 ## What is erased and what can remain
 
 - Erased: Furya Auth account/identities/sessions/refresh state, community
-  profile, linked-source identities, roles, individual votes, associated
-  content-report/rate-limit records, account-owned file attachments and
-  relevant linked legacy private reports.
+  profile, linked-source identities, roles, individual votes, user blocks,
+  associated content-report/rate-limit records, account-owned file attachments
+  and relevant linked legacy private reports.
 - Your authored request/comment text is replaced by a deleted placeholder.
   Other authors' discussion and deleted placeholders can remain.
 - Relevant moderation actions retain the action/context without the erased
   actor or arbitrary metadata and expire under the retention policy.
 - Isolated backups and retired Furya copies have a 30-day expiry and are
-  removed by scheduled maintenance. They are not used as an active service;
-  erasure must be re-applied if an older copy is restored before expiry.
+  removed by scheduled maintenance. They are not used as an active service.
+  An independent, root-protected erasure record (pseudonymous account hash and
+  timestamps only) lets Furya re-apply accepted deletions automatically after a
+  backup restore, so a restored copy cannot reactivate a deleted account.
 - Optional statistics use a separate installation ID; ask for those separately
   when identifiable. Statistics/version history expire after 90 days and
   private Furya crash-diagnostic copies after 30 days. Sentry-hosted copies use

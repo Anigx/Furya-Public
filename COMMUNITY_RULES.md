@@ -41,13 +41,19 @@ Keep requests specific, relevant and respectful. Do not submit:
   board, or attempts to bypass service limits.
 - Public details of an unreported vulnerability; use [SECURITY.md](SECURITY.md).
 
-## Reports and attachments
+## Reports, blocking and attachments
 
-The backend supports moderation records and controlled image attachments,
-but the current client does not provide attachment-upload or content-report
-submission controls. To report a board item privately, email the contact above
-with the item/comment reference and a brief reason. Do not repeat sensitive
-content in a public GitHub issue.
+Signed-in participants can report a request or comment from the in-app menu;
+reports go to the moderator queue. You can also block an author, which hides
+their requests and comments from you across the board until you unblock them
+(Settings or the blocked-authors screen). Reporting and blocking do not remove
+content for anyone else.
+
+The backend supports moderation records and controlled image attachments, but
+the current client does not provide attachment-upload controls. To report an
+item without an account, or to raise anything the in-app controls cannot cover,
+email the contact above with the item/comment reference and a brief reason. Do
+not repeat sensitive content in a public GitHub issue.
 
 If attachments are enabled in a future build, only permitted UI screenshots
 may be submitted; source media and sensitive information are not permitted.

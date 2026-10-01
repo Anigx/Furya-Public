@@ -196,9 +196,11 @@ available statistics ID. The old report dialog is no longer an active app
 entry point; remaining private records follow the same expiry rule.
 
 Deleted data may temporarily remain in isolated backups until expiry. Those
-copies are restricted recovery material, not used as an active service.
-Account/data erasure must be re-applied if a recovery copy is restored before
-expiry. Scheduled workstation cleanup runs when the workstation is available.
+copies are restricted recovery material, not used as an active service. An
+independent, root-protected erasure record (pseudonymous account hash and
+timestamps only) lets Furya re-apply accepted deletions automatically after a
+backup restore and prevents a restored copy from reactivating a deleted
+account. Scheduled workstation cleanup runs when the workstation is available.
 
 On your device, offline snapshots and read personalized-feed entries have
 30-day expiry rules. They are cleaned when the relevant service runs; this is
