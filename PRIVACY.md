@@ -1,6 +1,6 @@
 # Furya Privacy Notice
 
-Last updated: September 30, 2026
+Last updated: October 30, 2026
 
 ## 1. Operator and scope
 
@@ -188,7 +188,18 @@ Furya's private backend maintenance runs daily with these rules:
 | Auth security audit records | 90 days, or relevant removal on account erasure |
 | Moderation events and resolved content reports | 180 days after the event/resolution |
 | Community/Auth profile, links, posts and votes | While the account/discussion is active, until deletion or applicable moderation/retention action; open reports remain for resolution |
+| Targeted removal on verified request | Statistics device/version rows for the named install ID and the private Furya crash record matched to your report; account and community content follow the deletion process instead |
 | Isolated backups and retired Furya data copies | 30-day expiry; removal at the next scheduled maintenance run |
+
+A verified request can remove the statistics device/version rows for one install
+ID and the private Furya copy of the crash record matched to your report without
+waiting for the scheduled expiry. The installation ID shown in the privacy
+screen is currently the only identifier Furya exposes for self-service; the
+crash event ID is not displayed in the app, so contact us with the crash time
+and context and we match the private record. This targeted removal does not
+delete account or community content; use the account deletion process for
+those. Sentry-hosted copies of a crash event remain subject to Sentry's
+retention settings.
 
 Older private reports could contain report/reproduction text, app/build/
 platform/locale/model/screen information, source-user or guest context, and an
